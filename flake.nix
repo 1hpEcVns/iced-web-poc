@@ -19,7 +19,13 @@
               rustc
               trunk
               binaryen
+              lld
+              wasm-bindgen-cli
+              rustup
             ];
+
+            RUSTUP_TOOLCHAIN = "stable";
+            CARGO_TARGET_WASM32_UNKNOWN_UNKNOWN_LINKER = "${pkgs.lld}/bin/lld";
 
             buildInputs = with pkgs; [
               libxkbcommon
