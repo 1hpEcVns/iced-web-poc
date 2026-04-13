@@ -1,0 +1,11 @@
+[package]
+name = "iced-web-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.14", default-features = false, features = ["webgl", "fira-sans", "tiny-skia", "wgpu"] }
+
+[profile.release]
+opt-level = "s"
+lto = true

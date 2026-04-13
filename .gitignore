@@ -1,0 +1,7 @@
+/target/
+/dist/
+/result/
+*.wasm
+*.js
+Cargo.lock
+.DS_Store
