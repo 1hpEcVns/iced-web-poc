@@ -1,6 +1,7 @@
 /target/
 /dist/
 /result/
+skills/
 *.wasm
 *.js
 Cargo.lock
